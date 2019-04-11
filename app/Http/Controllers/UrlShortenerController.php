@@ -33,9 +33,6 @@ class UrlShortenerController extends Controller
             $shortener->last_requested = date('Y-m-d H:i:s');
 
             if ($shortener->save()) {
-                $url = url('/').'/s/'.UrlShortener::generateId64($shortener->getKey());
-                $shortener->short_url = $url;
-                $shortener->save();
                 return redirect()->action('UrlShortenerController@index')->with('short_url', $shortener->short_url);
             }
             else
