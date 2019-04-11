@@ -36,12 +36,11 @@ class UrlShortenerController extends Controller
                 $url = url('/').'/s/'.UrlShortener::generateId64($shortener->getKey());
                 $shortener->short_url = $url;
                 $shortener->save();
-                //return $shortener->short_url;
                 return redirect()->action('UrlShortenerController@index')->with('short_url', $shortener->short_url);
             }
             else
             {
-                return 'uhoh';
+                return redirect()->back()->withErrors(['msg', 'Could not create short url']);
             }            
         }
     }
