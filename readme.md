@@ -1,8 +1,8 @@
 <h2>About Project</h2>
 # Urls are encoded to a 64 Base url safe characters, that includes [a-z], [A-Z], [0-9], [+, =] (64 characters). You can check all endpoints with: php artisan route:list
 
-![image](https://drive.google.com/file/d/1Ueg_8_dcKzwcrnkeJfs-Xqrd9I1VXLIM/view?usp=sharing)
-![image](https://drive.google.com/file/d/1Xvee6lyi5jCKVLHV4ynubzWwWQ3hqA07/view?usp=sharing)
+![image](https://drive.google.com/uc?export=view&id=1Ueg_8_dcKzwcrnkeJfs-Xqrd9I1VXLIM)
+![image](https://drive.google.com/uc?export=view&id=1Xvee6lyi5jCKVLHV4ynubzWwWQ3hqA07)
 
 <h2>Installation</h2>
 
