@@ -1,3 +1,22 @@
+<h2>About Project</h2>
+# Urls are encoded to a 64 Base url safe characters, that includes [a-z], [A-Z], [0-9], [+, =] (64 characters). You can check all endpoints with: php artisan route:list
+
+![image](https://drive.google.com/uc?export=view&id=1Ueg_8_dcKzwcrnkeJfs-Xqrd9I1VXLIM)
+![image](https://drive.google.com/uc?export=view&id=1Xvee6lyi5jCKVLHV4ynubzWwWQ3hqA07)
+
+<h2>Installation</h2>
+
+1. Download or Clone project.
+2. Rename ".env.example" file to ".env" and add database credentials
+3. Inside project folder run: <i>composer install</i> to install dependencies in /vendor
+4. Run: <i>php artisan key:generate</i> to generate app key
+5. Run: <i>php artisan migrate:fresh</i> to contruct database tables
+6. Run: <i>php artisan serve</i>
+
+Note: csrf token validation turned off for testing purposes, if you want to turn it on go to App/Http/Middleware/VerifyCsrfToken.php and remove the route from the $except array and make sure to send csrf token of your app.
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
